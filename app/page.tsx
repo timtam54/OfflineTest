@@ -72,7 +72,7 @@ export default function TodoApp() {
       </form>
 
       <ul className="space-y-3">
-        {todos.map((todo:any) => (
+        {todos.map((todo) => (
           <li key={todo.id} className="flex items-center justify-between p-4 bg-white rounded-lg shadow">
             <span>{todo.task}</span>
             <button onClick={() => deleteTodo(todo.id)} className="text-red-500 hover:text-red-700">
